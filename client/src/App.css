@@ -1,0 +1,45 @@
+body {
+  font-family: sans-serif;
+  background-color: rgba(240, 240, 240, 0.5);
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: fill;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.loading {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  color: olive;
+}
+
+.title {
+  text-align: center;
+  color: olive;
+  font-size: 2.5em;
+}
+
+.container {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product {
+  margin: 10px;
+  background-color: white;
+  color: olive;
+  width: 200px;
+  border-radius: 10px;
+  text-align: center;
+  flex-basis: 200px;
+  flex-shrink: 0;
+}
