@@ -28,7 +28,7 @@ const App = () => {
         {data.map((value, index) => {
           const { id, img, name, price } = value
           return (
-            <div className='product' key={index}>
+            <div className='product' key={id}>
               <img src={img} alt={name} />
               <h3>{name}</h3>
               <p>Price: ${price}</p>
