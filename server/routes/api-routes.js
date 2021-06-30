@@ -12,7 +12,7 @@ const {
 router.get('/', getApi)
 router.get('/:id', getApiId)
 router.post('/', postApi)
-router.put('/:id', putApi)
+router.put('/', putApi)
 router.delete('/:id', delApi)
 
 module.exports = router
