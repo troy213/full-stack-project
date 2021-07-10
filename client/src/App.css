@@ -11,6 +11,20 @@ img {
   border-top-right-radius: 10px;
 }
 
+input {
+  margin: 0 0.5em;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 3px;
+  margin: 0.5em;
+  padding: 0.5em;
+  border: 0px;
+  color: white;
+  background: steelblue;
+}
+
 .loading {
   display: flex;
   height: 100vh;
@@ -35,6 +49,7 @@ img {
 
 .product {
   margin: 10px;
+  padding-bottom: 1em;
   background-color: white;
   color: olive;
   width: 200px;

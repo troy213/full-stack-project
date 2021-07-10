@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import useFetch from './useFetch'
+import useFetch from './hooks/useFetch'
 import './App.css'
 import Axios from 'axios'
 
@@ -43,6 +43,13 @@ const App = () => {
     window.location.reload()
   }
 
+  const handleReset = () => {
+    setId('')
+    setName('')
+    setPrice('')
+    setImg('')
+  }
+
   if (isLoading) {
     return (
       <div className='loading'>
@@ -78,8 +85,13 @@ const App = () => {
         value={img}
         onChange={(e) => setImg(e.target.value)}
       />
-      <button onClick={handleSubmit}>Submit</button>
-      <button onClick={handleUpdate}>Update</button>
+      {id === '' ? (
+        <button onClick={handleSubmit}>Submit</button>
+      ) : (
+        <button onClick={handleUpdate}>Update</button>
+      )}
+
+      <button onClick={handleReset}>Reset</button>
 
       <div className='container'>
         {data.map((value, index) => {

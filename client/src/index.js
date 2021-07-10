@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './App'
+import Approuter from './AppRouter'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Approuter />
   </React.StrictMode>,
   document.getElementById('root')
 )
